@@ -8,7 +8,10 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: "https://threads-m3id.onrender.com/",
+		// origin: "https://threads-m3id.onrender.com/",
+
+		origin: "http://localhost:8000",  //frontend link
+		
 		methods: ["GET", "POST"],
 	},
 });
