@@ -9,8 +9,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
 		//frontend link
-		// origin: "https://threads-three-sage.vercel.app",
-		origin: "",
+		origin: "https://threads-three-sage.vercel.app",
 		// origin: "http://localhost:8000", 
 		
 		methods: ["GET", "POST"],
