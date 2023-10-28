@@ -31,7 +31,3 @@ app.use("/api/posts", postRoutes);
 app.use("/api/messages", messageRoutes);
 
 server.listen(PORT, () => console.log(`Server started at http://localhost:${PORT}`));
-
-process.on('unhandledRejection',(err)=>{
-	console.log(err.name,err.message)
-})
