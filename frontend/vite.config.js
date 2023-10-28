@@ -11,7 +11,7 @@ export default defineConfig({
     //get rid of CORS error
     proxy:{
       "/api":{
-        target:'https://threads-backend-lr79.onrender.com', //backend link
+        target:'https://threads-back.vercel.app', //backend link
         // target:'http://localhost:5000',
         changeOrigin:true,
         secure:true

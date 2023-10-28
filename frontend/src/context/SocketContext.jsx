@@ -16,7 +16,7 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		// const socket = io("http://localhost:5000", {
-		const socket = io("https://threads-backend-lr79.onrender.com", {
+		const socket = io("https://threads-back.vercel.app", {
 			query: {
 				userId: user?._id,
 			},
