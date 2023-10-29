@@ -15,8 +15,8 @@ export const SocketContextProvider = ({ children }) => {
 	const user = useRecoilValue(userAtom);
 
 	useEffect(() => {
-		const socket = io("http://localhost:5000", {
-		// const socket = io("https://threads-back.vercel.app", {
+		// const socket = io("http://localhost:5000", {
+		const socket = io("https://threads-backend-lr79.onrender.com/", {
 			query: {
 				userId: user?._id,
 			},

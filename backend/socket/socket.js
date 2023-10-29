@@ -9,8 +9,8 @@ const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
 		//frontend link
-		// origin: ["https://threads-ten-tau.vercel.app"],
-		origin: "http://localhost:8000", 
+		origin: "https://threads-m3id.onrender.com/",
+		// origin: "http://localhost:8000", 
 		
 		methods: ["GET", "POST"],
 	},
