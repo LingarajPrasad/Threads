@@ -1,6 +1,6 @@
 import { Avatar, Divider, Flex, Image, Skeleton, SkeletonCircle, Text, useColorModeValue } from "@chakra-ui/react";
 import Message from "./Message";
-// import MessageInput from "./MessageInput";
+import MessageInput from "./MessageInput";
 import { useEffect, useRef, useState } from "react";
 import useShowToast from "../hooks/useShowToast";
 import { conversationsAtom, selectedConversationAtom } from "../atoms/messagesAtom";
@@ -155,7 +155,7 @@ const MessageContainer = () => {
 					))}
 			</Flex>
 
-			{/* <MessageInput setMessages={setMessages} /> */}
+			<MessageInput setMessages={setMessages} />
 		</Flex>
 	);
 };
