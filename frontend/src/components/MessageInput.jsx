@@ -14,7 +14,8 @@ import {
 	useDisclosure,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
-import { IoSendSharp } from "react-icons/io5";
+// import { IoSendSharp } from "react-icons/io5";
+
 import useShowToast from "../hooks/useShowToast";
 import { conversationsAtom, selectedConversationAtom } from "../atoms/messagesAtom";
 import { useRecoilValue, useSetRecoilState } from "recoil";
@@ -92,7 +93,8 @@ const MessageInput = ({ setMessages }) => {
 						value={messageText}
 					/>
 					<InputRightElement onClick={handleSendMessage} cursor={"pointer"}>
-						<IoSendSharp />
+						{/* <IoSendSharp /> */}
+						hlw
 					</InputRightElement>
 				</InputGroup>
 			</form>
@@ -115,13 +117,13 @@ const MessageInput = ({ setMessages }) => {
 						<Flex mt={5} w={"full"}>
 							<Image src={imgUrl} />
 						</Flex>
-						<Flex justifyContent={"flex-end"} my={2}>
+						{/* <Flex justifyContent={"flex-end"} my={2}>
 							{!isSending ? (
 								<IoSendSharp size={24} cursor={"pointer"} onClick={handleSendMessage} />
 							) : (
 								<Spinner size={"md"} />
 							)}
-						</Flex>
+						</Flex> */}
 					</ModalBody>
 				</ModalContent>
 			</Modal>
